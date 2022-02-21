@@ -21,8 +21,10 @@
     cursor: pointer;
     margin-top: 10px;
     margin-left: 140px;
+    border-radius: 10px;
 
 }
 button:hover {
     background-color: rgb(240, 240, 172);
+    border-radius: 10px;
   }
