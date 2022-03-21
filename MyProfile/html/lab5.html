@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./lab5.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabReport-4</title>
+</head>
+ 
+<body class="wrapper">
+    <div>
+ 
+        <div class="col-12 header header-txt">
+            <h1 style="color:aqua"><u>Welcome</u></h1>
+            <div class="col-7 header-txt">
+                <h2><b>Hi,This is Tasnim Shahriar Akash</b></h2><br>
+                <h4>React Native And Expo Programmer</h4></br>
+            </div>
+            <div class="col-5 header-img">
+                <img src="photo\akash.jpeg">
+            </div>
+        </div>
+        <div class="col-12 option-body ">
+            <span class="bar" onclick="openNav()">&#9776;</span>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <div class="nnt">
+                    <button class="col-5 options">Home</button>
+                </div>
+                <div class="nnt"><button class="col-5 options">About</button></div>
+ 
+                <div class="nnt"><button class="col-5 options">Hobby</button></div>
+ 
+                <div class="nnt"><button class="col-11 options">Keep in Touch</button></div>
+ 
+                <div class="nnt"><button class="col-6 options">Contact</button></div>
+ 
+            </div>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "40%";
+            }
+ 
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    </div>
+</body>
+ 
+</html>
