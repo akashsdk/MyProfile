@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="./lab7.css" />
 </head>
 <body>
-    <h1>akash</h1>
+    <?php
+    $con=mysqli_connect('localhost','root','');
+    if(!$con){
+        echo 'not connect to the server';
+    }
+    else{
+        mysqli_select_db($con,'nahid191');
+        if(!mysqli_select_db($con,'nahid191')){
+            echo 'database not selected'
+        }
+        else{
+            $form_name=$_POST['u_name'];
+            $form_mail=$_POST['u_mail'];
+           $sql= "insert into student('u_name, u_mailA) VALUES('$form_name','$form_mail')";
+           if(!mysqli_query($con,$sql)){
+               echo 'not insertede';
+           }
+           else{
+               echo 'inserted';
+           }
+        }
+
+    }
+    ?>
+
 </body>
 </html>
