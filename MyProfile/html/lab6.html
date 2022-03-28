@@ -39,7 +39,7 @@
             </tr>
         </table>
     </div>
-    <script src="JS/jquery-3.6.0.js"></script>
+    <script src="./jquery-3.6.0.js"></script>
     <script>
         $('#btn').click(function () {
             var firstname = $('#firstName').val();
@@ -55,6 +55,7 @@
 
         $('#checkbox').click(function () {
             $('#pass').attr('type', $('#checkbox').is(':checked') ? 'text' : 'password');
+            console.log($('#checkbox').is(':checked'))
         }
         )
     </script>
